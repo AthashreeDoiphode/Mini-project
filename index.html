@@ -8,10 +8,50 @@
 </head>
 <body style="color: black">
    <header> 
-  <span id="navbar"> <ul id="navcontent"> <div id="name"> <li> OFFBEAT OUTLET </li></div> <li> <a class="nav_links" href="womens.html">WOMEN</a></li>
-    <li> <a class="nav_links" href="mens1.html">MEN</a></li> <li> <a class="nav_links" href="accessories.html"> Accessories</a> </li> <li> <a class="nav_links" href="account.html"> Account</a></li>
-      <li> <a class="nav_links" href="contact.html"> Contact Us</a></li>
-    <li> <a class="nav_links" href="cart.html">Cart </a> </li></ul> 
+  <span id="navbar"> <ul id="navcontent"> <div id="name"> <li> OFFBEAT OUTLET </li></div> <li> 
+    <div class="dropdown">
+        <button style="background-color: black;color: white;">NEW IN</button>
+        <div class="dropdown-content">
+            <a href="#" onclick="displaySelected('NEW IN', 'tank tops')">tank tops</a>
+            <a href="#" onclick="displaySelected('NEW IN', 'Women short kurtis')"> Women short kurtis</a>
+            <a href="#" onclick="displaySelected('NEW IN', 'oversized t-shirts')">oversized t-shirts</a>
+            <a href="#" onclick="displaySelected('NEW IN', 'Latest denims')"> Latest denims</a>
+            </div>
+    </div>
+</li>
+    <li>
+        <div class="dropdown">
+             <button style="background-color: black;color: white;"> <a id="nav_links" href="womens.html">WOMEN </a> </button>
+        <div class="dropdown-content">
+            <a href="#" onclick="displaySelected('WOMEN', 'Dresses')">Dresses</a>
+            <a href="#" onclick="displaySelected('WOMEN', 'Tops')"> Tops</a>
+            <a href="#" onclick="displaySelected('WOMEN', 'Bottoms')">Bottoms</a>
+            <a href="#" onclick="displaySelected('WOMEN', 'Outwears')"> Outwears</a>
+            </div> </div> </li>
+     <li>  <div class="dropdown">
+      <button style="background-color: black;color: white;"> <a id="nav_links" href="mens1.html"> MEN </a></button>
+        <div class="dropdown-content">
+            <a href="#" onclick="displaySelected('MEN', 'Ethnic Wear')">Ethnic Wear</a>
+            <a href="#" onclick="displaySelected('MEN', 'T-shirts')"> T-shirts</a>
+            <a href="#" onclick="displaySelected('MEN', 'Shirts')">Shirts</a>
+            <a href="#" onclick="displaySelected('MEN', 'Bottom')">Bottoms</a>
+            </div> </div>
+     </li>
+      <li> 
+        <div class="dropdown">
+            <button style="background-color: black;color: white;">KIDS</button>
+       <div class="dropdown-content">
+           <a href="#" onclick="displaySelected('KIDS', 'T-shirts')">T-shirts</a>
+           <a href="#" onclick="displaySelected('KIDS', 'Sets-Suits')"> Sets & Suits</a>
+           <a href="#" onclick="displaySelected('KIDS', 'Bottoms')">Bottoms</a>
+           <a href="#" onclick="displaySelected('KIDS', 'Frocks & Dresses')">Frocks & Dresses </a>
+           <a href="#" onclick="displaySelected('KIDS', 'Sweatshirts & Jackets')">Sweatshirts & Jackets </a>
+        </div> </div> 
+      </li>
+    <li> 
+        <a id="nav_links" href="Accessories.html">ACCESSORIES </a>
+    </li> 
+    </ul>  <p id="selectedItem"></p>
    </span> </header> 
   <main> <section id="shop1"> 
     <div class="slideshow">
